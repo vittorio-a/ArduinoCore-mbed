@@ -314,6 +314,17 @@
 #define MBED_CONF_RTOS_TIMER_NUM                                                0                                                                                                // set by library:rtos
 #define MBED_CONF_RTOS_TIMER_THREAD_STACK_SIZE                                  768                                                                                              // set by library:rtos
 #define MBED_CONF_S2LP_PROVIDE_DEFAULT                                          0                                                                                                // set by library:s2lp
+#define MBED_CONF_SD_CMD0_IDLE_STATE_RETRIES                                    5                                                                                                // set by library:sd
+#define MBED_CONF_SD_CMD_TIMEOUT                                                10000                                                                                            // set by library:sd
+#define MBED_CONF_SD_CRC_ENABLED                                                0                                                                                                // set by library:sd
+#define MBED_CONF_SD_FSFAT_SDCARD_INSTALLED                                     1                                                                                                // set by library:sd
+#define MBED_CONF_SD_INIT_FREQUENCY                                             100000                                                                                           // set by library:sd
+#define MBED_CONF_SD_SPI_CLK                                                    ARDUINO_UNO_SPI_SCK                                                                              // set by library:sd
+#define MBED_CONF_SD_SPI_CS                                                     ARDUINO_UNO_SPI_CS                                                                               // set by library:sd
+#define MBED_CONF_SD_SPI_MISO                                                   ARDUINO_UNO_SPI_MISO                                                                             // set by library:sd
+#define MBED_CONF_SD_SPI_MOSI                                                   ARDUINO_UNO_SPI_MOSI                                                                             // set by library:sd
+#define MBED_CONF_SD_TEST_BUFFER                                                8192                                                                                             // set by library:sd
+#define MBED_CONF_SD_TRX_FREQUENCY                                              1000000                                                                                          // set by library:sd
 #define MBED_CONF_STORAGE_DEFAULT_KV                                            kv                                                                                               // set by library:storage
 #define MBED_CONF_STORAGE_FILESYSTEM_BLOCKDEVICE                                default                                                                                          // set by library:storage_filesystem
 #define MBED_CONF_STORAGE_FILESYSTEM_EXTERNAL_BASE_ADDRESS                      0                                                                                                // set by library:storage_filesystem
@@ -375,6 +386,10 @@
 #define SMP_DB_MAX_DEVICES                                                      3                                                                                                // set by library:cordio
 #define WSF_TRACE_ENABLED                                                       0                                                                                                // set by library:cordio
 // Macros
+#define ARDUINO_UNO_SPI_CS                                                      D10                                                                                              // defined by application
+#define ARDUINO_UNO_SPI_MISO                                                    D12                                                                                              // defined by application
+#define ARDUINO_UNO_SPI_MOSI                                                    D11                                                                                              // defined by application
+#define ARDUINO_UNO_SPI_SCK                                                     D13                                                                                              // defined by application
 #define BB_CLK_RATE_HZ                                                          1000000                                                                                          // defined by library:cordio-nordic-ll
 #define INIT_BROADCASTER                                                                                                                                                         // defined by library:cordio-nordic-ll
 #define INIT_CENTRAL                                                                                                                                                             // defined by library:cordio-nordic-ll
