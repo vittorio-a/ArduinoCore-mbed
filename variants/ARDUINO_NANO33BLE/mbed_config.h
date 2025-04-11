@@ -386,10 +386,10 @@
 #define SMP_DB_MAX_DEVICES                                                      3                                                                                                // set by library:cordio
 #define WSF_TRACE_ENABLED                                                       0                                                                                                // set by library:cordio
 // Macros
-#define ARDUINO_UNO_SPI_CS                                                      D10                                                                                              // defined by application
-#define ARDUINO_UNO_SPI_MISO                                                    D12                                                                                              // defined by application
-#define ARDUINO_UNO_SPI_MOSI                                                    D11                                                                                              // defined by application
-#define ARDUINO_UNO_SPI_SCK                                                     D13                                                                                              // defined by application
+#define ARDUINO_UNO_SPI_CS                                                      p34                                                                                              // defined by application
+#define ARDUINO_UNO_SPI_MISO                                                    p40                                                                                              // defined by application
+#define ARDUINO_UNO_SPI_MOSI                                                    p33                                                                                              // defined by application
+#define ARDUINO_UNO_SPI_SCK                                                     p13                                                                                              // defined by application
 #define BB_CLK_RATE_HZ                                                          1000000                                                                                          // defined by library:cordio-nordic-ll
 #define INIT_BROADCASTER                                                                                                                                                         // defined by library:cordio-nordic-ll
 #define INIT_CENTRAL                                                                                                                                                             // defined by library:cordio-nordic-ll
