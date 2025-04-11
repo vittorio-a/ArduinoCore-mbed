@@ -1,0 +1,14 @@
+{
+    "name": "framework-arduinoenrf52sd",
+    "version": "4.2.4",
+    "description": "Arduino Wiring-based Framework for the Nordic nRF52 with SD card support",
+    "keywords": [
+      "framework",
+      "arduino"
+    ],
+    "license": "LGPL-2.1-or-later",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/vittorio-a/ArduinoCore-mbed.git"
+    }
+  }
