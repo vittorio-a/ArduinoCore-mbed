@@ -1,7 +1,11 @@
 {
   "macros": [
     "NRFX_GPIOTE_CONFIG_NUM_OF_LOW_POWER_EVENTS=8",
-    "NRFX_WDT_ENABLED=1"
+    "NRFX_WDT_ENABLED=1",
+    "ARDUINO_UNO_SPI_MOSI=D11",
+    "ARDUINO_UNO_SPI_MISO=D12",
+    "ARDUINO_UNO_SPI_SCK=D13",
+    "ARDUINO_UNO_SPI_CS=D10"
   ],
   "target_overrides": {
     "*": {
@@ -13,7 +17,9 @@
       "rtos.main-thread-stack-size": 32768,
       "cordio.max-connections": 5,
       "platform.all-stats-enabled": true,
-      "target.mbed_app_start": "0x10000"
+      "target.mbed_app_start": "0x10000",
+      "target.components_add": ["SD"],
+      "target.features_add" : ["STORAGE"]
     }
   }
 }
